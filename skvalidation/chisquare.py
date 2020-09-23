@@ -23,7 +23,7 @@ class PearsonChiSquaredTest(unittest.TestCase):
             raise self.failureException(msg)
 
     def assertObservationByProbability(self, n: int, observation: np.ndarray, probabilities: np.ndarray,
-                                       p_value: float = 5.0, delta_degrees_of_freedom : int = 0, msg: Optional[str] = None):
+                                       p_value: float =  0.95, delta_degrees_of_freedom : int = 0, msg: Optional[str] = None):
         """The chi-square test tests the null hypothesis that the categorical data has the given probabilities.
          Fail if the calculated a p-value less that given *p-value*.
 
