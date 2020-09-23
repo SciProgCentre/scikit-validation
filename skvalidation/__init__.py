@@ -1,0 +1,3 @@
+
+from .chisquare import  PearsonChiSquaredTest
+
